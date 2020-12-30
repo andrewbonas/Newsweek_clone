@@ -1,0 +1,56 @@
+body {
+  max-width: 1310px;
+  margin: auto;
+}
+
+.nav-top {
+  background-color: #f82917;
+  padding: 5px;
+  display: relative;
+}
+
+.main-nav {
+  min-width: 1200px;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  top: -60px;
+  height: 60px;
+  margin-bottom: 0;
+}
+
+.bottom-nav {
+  width: 1310px;
+  position: relative;
+  top: -60px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.main-nav:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-bottom: 19px solid white;
+  border-right: 20px solid red;
+  width: 0;
+}
+
+.nav-background {
+  height: 41px;
+  z-index: -1;
+}
+
+.form-inline {
+  border: none;
+  width: 80px;
+}
+.top-header {
+  border: black solid 1px;
+}
+
+.rounded-pill {
+  background-color: yellow;
+}

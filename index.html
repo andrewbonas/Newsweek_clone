@@ -1,27 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <script
-  src="https://kit.fontawesome.com/2953fa26a1.js"
-  crossorigin="anonymous"
-></script>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <title>Document</title>
-</head>
-<body>
-<div class="container p-0">
-  <nav class="navbar navbar-expand-lg position-relative m-0 p-0">
-    <div class="top-header d-flex justify-content-between align-items-center p-3">
-      <div class="location-date position-relative ml-2">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/2953fa26a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-light">
+    <header>
+      <div
+        class="nav-top d-flex justify-content-between align-items-center pr-4 pl-4"
+      >
+        <div class="d-none d-lg-inline-block text-light">
+          <div class="location">
+            <i class="fa fa-cloud" aria-hidden="true"></i>
+            25º Amsterdam >
+          </div>
+          <div class="date d-none d-lg-block">Mon, June 2030</div>
+        </div>
+        <div class="logo-big d-none d-lg-block">
+          <a
+            title="Newsweek, LLC., Public domain, via Wikimedia Commons"
+            href="https://commons.wikimedia.org/wiki/File:Newsweek_Logo.svg"
+            ><img
+              width="500px"
+              alt="Newsweek Logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Newsweek_Logo.svg/1024px-Newsweek_Logo.svg.png"
+          /></a>
+        </div>
+        <div class="logo-big d-lg-none d-sm-block">
+          <a
+            title="Newsweek, LLC., Public domain, via Wikimedia Commons"
+            href="https://commons.wikimedia.org/wiki/File:Newsweek_Logo.svg"
+            ><img
+              width="150px"
+              alt="Newsweek Logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Newsweek_Logo.svg/1024px-Newsweek_Logo.svg.png"
+          /></a>
+        </div>
+        <div class="d-flex align-items-center align-items-lg-end h-100">
+          <button
+            class="btn text-light d-block text-uppercase d-none d-sm-block"
+          >
+            login
+          </button>
+          <button class="btn subscribe rounded-pill d-flex text-uppercase">
+            subscribe
+          </button>
+          <button
+            class="btn d-flex d-lg-none align-items-center pr-4 text-light"
+          >
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
+    </header>
+    
+    <div class="nav-background bg-white border-bottom d-none d-lg-block"></div>
 
-    </div>
-  </nav>
+    <nav class="main-nav d-none d-lg-flex flex-md-row navbar-expand-lg navbar-light bg-white">
+      <ul class="nav collapse navbar-collapse text-capitalize border-bottom">
+      <li class="nav-item border-end">
+        <a class="nav-link text-dark border-end" href="#">U.S.</a>
+      </li>
+      <li class="nav-item border-end">
+        <a class="nav-link text-dark" href="#">world</a>
+      </li>
+ 
+        <li class=" nav-item border-end">
+          <a class="nav-link text-dark" href="#">U.S.</a>
+        </li>
+        <li class=" nav-item border-end">
+          <a class="nav-link text-dark" href="#">business</a>
+        </li>
 
-</div>
-</body>
+          <li class=" nav-item border-end">
+            <a class="nav-link text-dark" href="#">tech & science</a>
+          </li>
+          <li class=" nav-item border-end">
+            <a class="nav-link text-dark" href="#">culture</a>
+          </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">newsgeek</a>
+            </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">sports</a>
+            </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">health</a>
+            </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">the debate</a>
+            </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">vantage</a>
+            </li>
+            <li class=" nav-item border-end">
+              <a class="nav-link text-dark" href="#">weather</a>
+            </li>
+            <form class="form-inline d-flex m-1">
+              <input class="form-control form-control-sm" type="text" placeholder="Search"
+                aria-label="Search">
+              <i class="fas fa-search pt-2 p-1" aria-hidden="true"></i>
+            </form>
+          </ul>
+        </nav>
+        <nav class="bottom-nav d-none d-lg-flex navbar-expand-lg navbar-light bg-white">
+            <ul class="nav collapse navbar-collapse text-uppercase font-bold border-bottom">
+            <li class="nav-item mx-3">
+              <a class="nav-link text-dark" href="#">trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">joe biden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">donald trump</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">coronavirus</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">stimulus package</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-muted" href="#">vaccine</a>
+            </li>
+          </nav>
+    
+  </body>
 </html>
