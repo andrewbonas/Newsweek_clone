@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(238, 231, 231);
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1310px;
   margin: auto;
@@ -10,8 +14,8 @@ body {
 }
 
 .main-nav {
-  min-width: 1200px;
-  max-width: 1200px;
+  min-width: 1250px;
+  max-width: 1250px;
   position: relative;
   z-index: 1;
   top: -60px;
@@ -35,7 +39,7 @@ body {
   position: absolute;
   top: 0; right: 0;
   border-bottom: 19px solid white;
-  border-right: 20px solid red;
+  border-right: 20px solid #f82917;
   width: 0;
 }
 
@@ -48,10 +52,36 @@ body {
   border: none;
   width: 80px;
 }
+
 .top-header {
   border: black solid 1px;
 }
 
+.h-scroll {
+  height: 455vh;
+  overflow: visible;
+  overflow-y: scroll; 
+  scroll-behavior: smooth;
+}
+
 .rounded-pill {
   background-color: yellow;
+}
+
+.profile {
+  height: 80px;
+  width: 80px;
+}
+
+.letter-bg {
+  background-color: #f82917;
+  padding: 0 5px 0 5px;
+  margin-right: 6px;
+
+}
+
+.book-image {
+border: black solid 5px;
+object-fit: contain;
+  width: 1000px;
 }
